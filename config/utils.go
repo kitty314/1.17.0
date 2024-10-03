@@ -11,16 +11,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/metacubex/mihomo/adapter/outboundgroup"
-	"github.com/metacubex/mihomo/common/structure"
-	mihomoHttp "github.com/metacubex/mihomo/component/http"
-	C "github.com/metacubex/mihomo/constant"
+	"github.com/kitty314/1.17.0/adapter/outboundgroup"
+	"github.com/kitty314/1.17.0/common/structure"
+	clash.metaHttp "github.com/kitty314/1.17.0/component/http"
+	C "github.com/kitty314/1.17.0/constant"
 )
 
 func downloadForBytes(url string) ([]byte, error) {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*90)
 	defer cancel()
-	resp, err := mihomoHttp.HttpRequest(ctx, url, http.MethodGet, http.Header{"User-Agent": {C.UA}}, nil)
+	resp, err := clash.metaHttp.HttpRequest(ctx, url, http.MethodGet, http.Header{"User-Agent": {C.UA}}, nil)
 	if err != nil {
 		return nil, err
 	}

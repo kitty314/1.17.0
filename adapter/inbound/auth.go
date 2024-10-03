@@ -4,7 +4,7 @@ import (
 	"net"
 	"net/netip"
 
-	C "github.com/metacubex/mihomo/constant"
+	C "github.com/kitty314/1.17.0/constant"
 )
 
 var skipAuthPrefixes []netip.Prefix

@@ -5,10 +5,10 @@ import (
 	"errors"
 	"net"
 
-	"github.com/metacubex/mihomo/common/sockopt"
-	"github.com/metacubex/mihomo/constant/features"
-	"github.com/metacubex/mihomo/context"
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.17.0/common/sockopt"
+	"github.com/kitty314/1.17.0/constant/features"
+	"github.com/kitty314/1.17.0/context"
+	"github.com/kitty314/1.17.0/log"
 
 	D "github.com/miekg/dns"
 )

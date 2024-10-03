@@ -1,6 +1,6 @@
 package protocol
 
-import "github.com/metacubex/mihomo/transport/ssr/tools"
+import "github.com/kitty314/1.17.0/transport/ssr/tools"
 
 func init() {
 	register("auth_aes128_md5", newAuthAES128MD5, 9)

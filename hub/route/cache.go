@@ -3,7 +3,7 @@ package route
 import (
 	"net/http"
 
-	"github.com/metacubex/mihomo/component/resolver"
+	"github.com/kitty314/1.17.0/component/resolver"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/render"

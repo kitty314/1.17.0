@@ -3,9 +3,9 @@ package redir
 import (
 	"net"
 
-	"github.com/metacubex/mihomo/adapter/inbound"
-	N "github.com/metacubex/mihomo/common/net"
-	C "github.com/metacubex/mihomo/constant"
+	"github.com/kitty314/1.17.0/adapter/inbound"
+	N "github.com/kitty314/1.17.0/common/net"
+	C "github.com/kitty314/1.17.0/constant"
 )
 
 type Listener struct {

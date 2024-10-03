@@ -64,7 +64,7 @@ jobs:
       - name: Set ENV
         run: |
           sudo timedatectl set-timezone "Asia/Shanghai"
-          echo "NAME=mihomo" >> $GITHUB_ENV
+          echo "NAME=clash.meta" >> $GITHUB_ENV
           echo "REPO=${{ github.repository }}" >> $GITHUB_ENV
           echo "ShortSHA=$(git rev-parse --short ${{ github.sha }})" >> $GITHUB_ENV
           echo "BUILDTIME=$(date)" >> $GITHUB_ENV
@@ -99,7 +99,7 @@ jobs:
       - name: Build WithoutCGO
         if: ${{ matrix.job.type!='WithCGO' }}
         env:
-          NAME: mihomo
+          NAME: clash.meta
           BINDIR: bin
         run: make -j$(($(nproc) + 1)) ${{ matrix.job.target }}
 

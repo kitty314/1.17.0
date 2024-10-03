@@ -1,8 +1,8 @@
 package provider
 
 import (
-	"github.com/metacubex/mihomo/common/utils"
-	"github.com/metacubex/mihomo/constant"
+	"github.com/kitty314/1.17.0/common/utils"
+	"github.com/kitty314/1.17.0/constant"
 )
 
 // Vehicle Type

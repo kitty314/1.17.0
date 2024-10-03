@@ -1,10 +1,10 @@
 package route
 
 import (
-	"github.com/metacubex/mihomo/constant"
+	"github.com/kitty314/1.17.0/constant"
 	"net/http"
 
-	"github.com/metacubex/mihomo/tunnel"
+	"github.com/kitty314/1.17.0/tunnel"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/render"

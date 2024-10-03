@@ -9,10 +9,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/metacubex/mihomo/common/pool"
-	"github.com/metacubex/mihomo/component/resolver"
-	"github.com/metacubex/mihomo/listener/sing"
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.17.0/common/pool"
+	"github.com/kitty314/1.17.0/component/resolver"
+	"github.com/kitty314/1.17.0/listener/sing"
+	"github.com/kitty314/1.17.0/log"
 
 	D "github.com/miekg/dns"
 

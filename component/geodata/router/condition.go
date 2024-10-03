@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/metacubex/mihomo/component/geodata/strmatcher"
+	"github.com/kitty314/1.17.0/component/geodata/strmatcher"
 )
 
 var matcherTypeMap = map[Domain_Type]strmatcher.Type{

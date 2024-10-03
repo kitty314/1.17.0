@@ -11,8 +11,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/metacubex/mihomo/component/resolver"
-	"github.com/metacubex/mihomo/constant/features"
+	"github.com/kitty314/1.17.0/component/resolver"
+	"github.com/kitty314/1.17.0/constant/features"
 )
 
 type dialFunc func(ctx context.Context, network string, ips []netip.Addr, port string, opt *option) (net.Conn, error)

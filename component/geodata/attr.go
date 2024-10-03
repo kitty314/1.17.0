@@ -3,7 +3,7 @@ package geodata
 import (
 	"strings"
 
-	"github.com/metacubex/mihomo/component/geodata/router"
+	"github.com/kitty314/1.17.0/component/geodata/router"
 )
 
 type AttributeList struct {

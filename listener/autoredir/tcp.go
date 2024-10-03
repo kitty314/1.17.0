@@ -4,11 +4,11 @@ import (
 	"net"
 	"net/netip"
 
-	"github.com/metacubex/mihomo/adapter/inbound"
-	N "github.com/metacubex/mihomo/common/net"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/log"
-	"github.com/metacubex/mihomo/transport/socks5"
+	"github.com/kitty314/1.17.0/adapter/inbound"
+	N "github.com/kitty314/1.17.0/common/net"
+	C "github.com/kitty314/1.17.0/constant"
+	"github.com/kitty314/1.17.0/log"
+	"github.com/kitty314/1.17.0/transport/socks5"
 )
 
 type Listener struct {

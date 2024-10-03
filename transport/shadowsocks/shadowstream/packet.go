@@ -6,8 +6,8 @@ import (
 	"io"
 	"net"
 
-	N "github.com/metacubex/mihomo/common/net"
-	"github.com/metacubex/mihomo/common/pool"
+	N "github.com/kitty314/1.17.0/common/net"
+	"github.com/kitty314/1.17.0/common/pool"
 )
 
 // ErrShortPacket means the packet is too short to be a valid encrypted packet.

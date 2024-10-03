@@ -2,10 +2,10 @@ package logic_test
 
 import (
 	// https://github.com/golang/go/wiki/CodeReviewComments#import-dot
-	. "github.com/metacubex/mihomo/rules/logic"
+	. "github.com/kitty314/1.17.0/rules/logic"
 
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/rules"
+	C "github.com/kitty314/1.17.0/constant"
+	"github.com/kitty314/1.17.0/rules"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

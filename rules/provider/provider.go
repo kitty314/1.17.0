@@ -9,10 +9,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/metacubex/mihomo/common/pool"
-	"github.com/metacubex/mihomo/component/resource"
-	C "github.com/metacubex/mihomo/constant"
-	P "github.com/metacubex/mihomo/constant/provider"
+	"github.com/kitty314/1.17.0/common/pool"
+	"github.com/kitty314/1.17.0/component/resource"
+	C "github.com/kitty314/1.17.0/constant"
+	P "github.com/kitty314/1.17.0/constant/provider"
 )
 
 var (

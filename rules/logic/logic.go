@@ -6,8 +6,8 @@ import (
 	"regexp"
 	"strings"
 
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/rules/common"
+	C "github.com/kitty314/1.17.0/constant"
+	"github.com/kitty314/1.17.0/rules/common"
 )
 
 type Logic struct {

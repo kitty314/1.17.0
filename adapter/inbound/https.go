@@ -4,7 +4,7 @@ import (
 	"net"
 	"net/http"
 
-	C "github.com/metacubex/mihomo/constant"
+	C "github.com/kitty314/1.17.0/constant"
 )
 
 // NewHTTPS receive CONNECT request and return ConnContext

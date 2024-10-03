@@ -9,10 +9,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.17.0/log"
 )
 
-// ConvertsV2Ray convert V2Ray subscribe proxies data to mihomo proxies config
+// ConvertsV2Ray convert V2Ray subscribe proxies data to clash.meta proxies config
 func ConvertsV2Ray(buf []byte) ([]map[string]any, error) {
 	data := DecodeBase64(buf)
 

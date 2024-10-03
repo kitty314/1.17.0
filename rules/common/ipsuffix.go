@@ -1,7 +1,7 @@
 package common
 
 import (
-	C "github.com/metacubex/mihomo/constant"
+	C "github.com/kitty314/1.17.0/constant"
 	"net/netip"
 )
 

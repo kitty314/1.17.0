@@ -2,7 +2,7 @@
 
 package process
 
-import "github.com/metacubex/mihomo/constant"
+import "github.com/kitty314/1.17.0/constant"
 
 type PackageNameResolver func(metadata *constant.Metadata) (string, error)
 

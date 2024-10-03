@@ -8,9 +8,9 @@ import (
 	"sync"
 	"time"
 
-	mihomoHttp "github.com/metacubex/mihomo/component/http"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/log"
+	clash.metaHttp "github.com/kitty314/1.17.0/component/http"
+	C "github.com/kitty314/1.17.0/constant"
+	"github.com/kitty314/1.17.0/log"
 
 	"github.com/oschwald/maxminddb-golang"
 )
@@ -79,7 +79,7 @@ func Instance() Reader {
 func DownloadMMDB(path string) (err error) {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*90)
 	defer cancel()
-	resp, err := mihomoHttp.HttpRequest(ctx, C.MmdbUrl, http.MethodGet, http.Header{"User-Agent": {C.UA}}, nil)
+	resp, err := clash.metaHttp.HttpRequest(ctx, C.MmdbUrl, http.MethodGet, http.Header{"User-Agent": {C.UA}}, nil)
 	if err != nil {
 		return
 	}

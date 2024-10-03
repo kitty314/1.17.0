@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/metacubex/mihomo/config"
-	"github.com/metacubex/mihomo/hub/updater"
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.17.0/config"
+	"github.com/kitty314/1.17.0/hub/updater"
+	"github.com/kitty314/1.17.0/log"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/render"

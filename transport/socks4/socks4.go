@@ -9,7 +9,7 @@ import (
 	"net/netip"
 	"strconv"
 
-	"github.com/metacubex/mihomo/component/auth"
+	"github.com/kitty314/1.17.0/component/auth"
 )
 
 const Version = 0x04

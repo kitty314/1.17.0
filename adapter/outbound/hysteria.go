@@ -14,17 +14,17 @@ import (
 	"github.com/metacubex/quic-go/congestion"
 	M "github.com/sagernet/sing/common/metadata"
 
-	"github.com/metacubex/mihomo/component/ca"
-	"github.com/metacubex/mihomo/component/dialer"
-	"github.com/metacubex/mihomo/component/proxydialer"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/log"
-	hyCongestion "github.com/metacubex/mihomo/transport/hysteria/congestion"
-	"github.com/metacubex/mihomo/transport/hysteria/core"
-	"github.com/metacubex/mihomo/transport/hysteria/obfs"
-	"github.com/metacubex/mihomo/transport/hysteria/pmtud_fix"
-	"github.com/metacubex/mihomo/transport/hysteria/transport"
-	"github.com/metacubex/mihomo/transport/hysteria/utils"
+	"github.com/kitty314/1.17.0/component/ca"
+	"github.com/kitty314/1.17.0/component/dialer"
+	"github.com/kitty314/1.17.0/component/proxydialer"
+	C "github.com/kitty314/1.17.0/constant"
+	"github.com/kitty314/1.17.0/log"
+	hyCongestion "github.com/kitty314/1.17.0/transport/hysteria/congestion"
+	"github.com/kitty314/1.17.0/transport/hysteria/core"
+	"github.com/kitty314/1.17.0/transport/hysteria/obfs"
+	"github.com/kitty314/1.17.0/transport/hysteria/pmtud_fix"
+	"github.com/kitty314/1.17.0/transport/hysteria/transport"
+	"github.com/kitty314/1.17.0/transport/hysteria/utils"
 )
 
 const (

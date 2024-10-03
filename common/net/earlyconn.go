@@ -6,7 +6,7 @@ import (
 	"sync/atomic"
 	"unsafe"
 
-	"github.com/metacubex/mihomo/common/buf"
+	"github.com/kitty314/1.17.0/common/buf"
 )
 
 type earlyConn struct {

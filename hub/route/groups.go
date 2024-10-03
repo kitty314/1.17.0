@@ -8,11 +8,11 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/metacubex/mihomo/adapter"
-	"github.com/metacubex/mihomo/adapter/outboundgroup"
-	"github.com/metacubex/mihomo/common/utils"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/tunnel"
+	"github.com/kitty314/1.17.0/adapter"
+	"github.com/kitty314/1.17.0/adapter/outboundgroup"
+	"github.com/kitty314/1.17.0/common/utils"
+	C "github.com/kitty314/1.17.0/constant"
+	"github.com/kitty314/1.17.0/tunnel"
 )
 
 func GroupRouter() http.Handler {

@@ -10,7 +10,7 @@ import (
 	"strings"
 )
 
-const Name = "mihomo"
+const Name = "clash.meta"
 
 var (
 	GeositeName = "GeoSite.dat"
@@ -19,8 +19,8 @@ var (
 
 // Path is used to get the configuration path
 //
-// on Unix systems, `$HOME/.config/mihomo`.
-// on Windows, `%USERPROFILE%/.config/mihomo`.
+// on Unix systems, `$HOME/.config/clash.meta`.
+// on Windows, `%USERPROFILE%/.config/clash.meta`.
 var Path = func() *path {
 	homeDir, err := os.UserHomeDir()
 	if err != nil {
@@ -165,7 +165,7 @@ func (p *path) GetAssetLocation(file string) string {
 func (p *path) GetExecutableFullPath() string {
 	exePath, err := os.Executable()
 	if err != nil {
-		return "mihomo"
+		return "clash.meta"
 	}
 	res, _ := filepath.EvalSymlinks(exePath)
 	return res

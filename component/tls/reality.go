@@ -20,9 +20,9 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/metacubex/mihomo/common/utils"
-	"github.com/metacubex/mihomo/log"
-	"github.com/metacubex/mihomo/ntp"
+	"github.com/kitty314/1.17.0/common/utils"
+	"github.com/kitty314/1.17.0/log"
+	"github.com/kitty314/1.17.0/ntp"
 
 	utls "github.com/sagernet/utls"
 	"github.com/zhangyunhao116/fastrand"

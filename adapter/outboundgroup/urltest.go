@@ -6,13 +6,13 @@ import (
 	"errors"
 	"time"
 
-	"github.com/metacubex/mihomo/adapter/outbound"
-	"github.com/metacubex/mihomo/common/callback"
-	N "github.com/metacubex/mihomo/common/net"
-	"github.com/metacubex/mihomo/common/singledo"
-	"github.com/metacubex/mihomo/component/dialer"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/constant/provider"
+	"github.com/kitty314/1.17.0/adapter/outbound"
+	"github.com/kitty314/1.17.0/common/callback"
+	N "github.com/kitty314/1.17.0/common/net"
+	"github.com/kitty314/1.17.0/common/singledo"
+	"github.com/kitty314/1.17.0/component/dialer"
+	C "github.com/kitty314/1.17.0/constant"
+	"github.com/kitty314/1.17.0/constant/provider"
 )
 
 type urlTestOption func(*URLTest)

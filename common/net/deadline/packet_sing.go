@@ -4,7 +4,7 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/metacubex/mihomo/common/net/packet"
+	"github.com/kitty314/1.17.0/common/net/packet"
 	"github.com/sagernet/sing/common/buf"
 	"github.com/sagernet/sing/common/bufio"
 	M "github.com/sagernet/sing/common/metadata"

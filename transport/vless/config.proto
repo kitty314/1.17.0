@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package mihomo.transport.vless;
-option csharp_namespace = "Mihomo.Transport.Vless";
-option go_package = "github.com/metacubex/mihomo/transport/vless";
-option java_package = "com.mihomo.transport.vless";
+package clash.meta.transport.vless;
+option csharp_namespace = "clash.meta.Transport.Vless";
+option go_package = "github.com/kitty314/1.17.0/transport/vless";
+option java_package = "com.clash.meta.transport.vless";
 option java_multiple_files = true;
 
 message Addons {

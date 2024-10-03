@@ -6,9 +6,9 @@ import (
 	"golang.org/x/sync/singleflight"
 	"strings"
 
-	"github.com/metacubex/mihomo/component/geodata/router"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.17.0/component/geodata/router"
+	C "github.com/kitty314/1.17.0/constant"
+	"github.com/kitty314/1.17.0/log"
 )
 
 var geoLoaderName = "memconservative"

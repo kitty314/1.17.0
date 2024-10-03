@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/metacubex/mihomo/common/singledo"
+	"github.com/kitty314/1.17.0/common/singledo"
 )
 
 type Interface struct {

@@ -3,11 +3,11 @@ package outboundgroup
 import (
 	"context"
 	"encoding/json"
-	"github.com/metacubex/mihomo/adapter/outbound"
-	"github.com/metacubex/mihomo/component/dialer"
-	"github.com/metacubex/mihomo/component/proxydialer"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/constant/provider"
+	"github.com/kitty314/1.17.0/adapter/outbound"
+	"github.com/kitty314/1.17.0/component/dialer"
+	"github.com/kitty314/1.17.0/component/proxydialer"
+	C "github.com/kitty314/1.17.0/constant"
+	"github.com/kitty314/1.17.0/constant/provider"
 )
 
 type Relay struct {

@@ -5,7 +5,7 @@ import (
 	"hash/crc32"
 	"net"
 
-	"github.com/metacubex/mihomo/common/pool"
+	"github.com/kitty314/1.17.0/common/pool"
 
 	"github.com/zhangyunhao116/fastrand"
 )

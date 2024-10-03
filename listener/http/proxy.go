@@ -6,12 +6,12 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/metacubex/mihomo/adapter/inbound"
-	"github.com/metacubex/mihomo/common/lru"
-	N "github.com/metacubex/mihomo/common/net"
-	C "github.com/metacubex/mihomo/constant"
-	authStore "github.com/metacubex/mihomo/listener/auth"
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.17.0/adapter/inbound"
+	"github.com/kitty314/1.17.0/common/lru"
+	N "github.com/kitty314/1.17.0/common/net"
+	C "github.com/kitty314/1.17.0/constant"
+	authStore "github.com/kitty314/1.17.0/listener/auth"
+	"github.com/kitty314/1.17.0/log"
 )
 
 func HandleConn(c net.Conn, tunnel C.Tunnel, cache *lru.LruCache[string, bool], additions ...inbound.Addition) {

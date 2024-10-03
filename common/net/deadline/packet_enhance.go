@@ -5,7 +5,7 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/metacubex/mihomo/common/net/packet"
+	"github.com/kitty314/1.17.0/common/net/packet"
 )
 
 type EnhancePacketConn struct {

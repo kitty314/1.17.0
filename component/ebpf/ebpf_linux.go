@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"net/netip"
 
-	"github.com/metacubex/mihomo/common/cmd"
-	"github.com/metacubex/mihomo/component/dialer"
-	"github.com/metacubex/mihomo/component/ebpf/redir"
-	"github.com/metacubex/mihomo/component/ebpf/tc"
-	C "github.com/metacubex/mihomo/constant"
+	"github.com/kitty314/1.17.0/common/cmd"
+	"github.com/kitty314/1.17.0/component/dialer"
+	"github.com/kitty314/1.17.0/component/ebpf/redir"
+	"github.com/kitty314/1.17.0/component/ebpf/tc"
+	C "github.com/kitty314/1.17.0/constant"
 	"github.com/sagernet/netlink"
 )
 
@@ -47,7 +47,7 @@ func NewTcEBpfProgram(ifaceNames []string, tunName string) (*TcEBpfProgram, erro
 
 	tunIndex := uint32(tunIface.Attrs().Index)
 
-	dialer.DefaultRoutingMark.Store(C.MihomoTrafficMark)
+	dialer.DefaultRoutingMark.Store(C.clash.metaTrafficMark)
 
 	ifMark := uint32(dialer.DefaultRoutingMark.Load())
 

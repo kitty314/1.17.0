@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"time"
 
-	types "github.com/metacubex/mihomo/constant/provider"
-	"github.com/metacubex/mihomo/log"
+	types "github.com/kitty314/1.17.0/constant/provider"
+	"github.com/kitty314/1.17.0/log"
 
 	"github.com/samber/lo"
 )

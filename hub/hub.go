@@ -1,10 +1,10 @@
 package hub
 
 import (
-	"github.com/metacubex/mihomo/config"
-	"github.com/metacubex/mihomo/hub/executor"
-	"github.com/metacubex/mihomo/hub/route"
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.17.0/config"
+	"github.com/kitty314/1.17.0/hub/executor"
+	"github.com/kitty314/1.17.0/hub/route"
+	"github.com/kitty314/1.17.0/log"
 )
 
 type Option func(*config.Config)
@@ -27,7 +27,7 @@ func WithSecret(secret string) Option {
 	}
 }
 
-// Parse call at the beginning of mihomo
+// Parse call at the beginning of clash.meta
 func Parse(options ...Option) error {
 	cfg, err := executor.Parse()
 	if err != nil {

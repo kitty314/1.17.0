@@ -1,9 +1,9 @@
 package inbound
 
 import (
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/listener/redir"
-	"github.com/metacubex/mihomo/log"
+	C "github.com/kitty314/1.17.0/constant"
+	"github.com/kitty314/1.17.0/listener/redir"
+	"github.com/kitty314/1.17.0/log"
 )
 
 type RedirOption struct {

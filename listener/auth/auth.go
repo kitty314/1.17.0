@@ -1,7 +1,7 @@
 package auth
 
 import (
-	"github.com/metacubex/mihomo/component/auth"
+	"github.com/kitty314/1.17.0/component/auth"
 )
 
 var authenticator auth.Authenticator

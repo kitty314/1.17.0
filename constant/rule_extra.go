@@ -1,7 +1,7 @@
 package constant
 
 import (
-	"github.com/metacubex/mihomo/component/geodata/router"
+	"github.com/kitty314/1.17.0/component/geodata/router"
 )
 
 type RuleGeoSite interface {

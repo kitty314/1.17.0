@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.17.0/log"
 
 	D "github.com/miekg/dns"
 	"golang.org/x/exp/slices"

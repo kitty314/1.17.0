@@ -3,11 +3,11 @@ package inbound
 import (
 	"fmt"
 
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/log"
+	C "github.com/kitty314/1.17.0/constant"
+	"github.com/kitty314/1.17.0/log"
 
-	"github.com/metacubex/mihomo/listener/mixed"
-	"github.com/metacubex/mihomo/listener/socks"
+	"github.com/kitty314/1.17.0/listener/mixed"
+	"github.com/kitty314/1.17.0/listener/socks"
 )
 
 type MixedOption struct {

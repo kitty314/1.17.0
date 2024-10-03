@@ -1,4 +1,4 @@
-## Mihomo testing suit
+## clash.meta testing suit
 
 ### Protocol testing suit
 
@@ -51,8 +51,8 @@ $ make test
 benchmark (Linux)
 
 > Cannot represent the throughput of the protocol on your machine
-> but you can compare the corresponding throughput of the protocol on mihomo
-> (change chunkSize to measure the maximum throughput of mihomo on your machine)
+> but you can compare the corresponding throughput of the protocol on clash.meta
+> (change chunkSize to measure the maximum throughput of clash.meta on your machine)
 
 ```
 $ make benchmark

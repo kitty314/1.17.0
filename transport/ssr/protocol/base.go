@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/metacubex/mihomo/common/pool"
-	"github.com/metacubex/mihomo/log"
-	"github.com/metacubex/mihomo/transport/shadowsocks/core"
+	"github.com/kitty314/1.17.0/common/pool"
+	"github.com/kitty314/1.17.0/log"
+	"github.com/kitty314/1.17.0/transport/shadowsocks/core"
 
 	"github.com/zhangyunhao116/fastrand"
 )

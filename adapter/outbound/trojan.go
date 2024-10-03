@@ -8,14 +8,14 @@ import (
 	"net/http"
 	"strconv"
 
-	N "github.com/metacubex/mihomo/common/net"
-	"github.com/metacubex/mihomo/component/ca"
-	"github.com/metacubex/mihomo/component/dialer"
-	"github.com/metacubex/mihomo/component/proxydialer"
-	tlsC "github.com/metacubex/mihomo/component/tls"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/transport/gun"
-	"github.com/metacubex/mihomo/transport/trojan"
+	N "github.com/kitty314/1.17.0/common/net"
+	"github.com/kitty314/1.17.0/component/ca"
+	"github.com/kitty314/1.17.0/component/dialer"
+	"github.com/kitty314/1.17.0/component/proxydialer"
+	tlsC "github.com/kitty314/1.17.0/component/tls"
+	C "github.com/kitty314/1.17.0/constant"
+	"github.com/kitty314/1.17.0/transport/gun"
+	"github.com/kitty314/1.17.0/transport/trojan"
 )
 
 type Trojan struct {

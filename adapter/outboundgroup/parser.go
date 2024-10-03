@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/metacubex/mihomo/adapter/outbound"
-	"github.com/metacubex/mihomo/adapter/provider"
-	"github.com/metacubex/mihomo/common/structure"
-	"github.com/metacubex/mihomo/common/utils"
-	C "github.com/metacubex/mihomo/constant"
-	types "github.com/metacubex/mihomo/constant/provider"
+	"github.com/kitty314/1.17.0/adapter/outbound"
+	"github.com/kitty314/1.17.0/adapter/provider"
+	"github.com/kitty314/1.17.0/common/structure"
+	"github.com/kitty314/1.17.0/common/utils"
+	C "github.com/kitty314/1.17.0/constant"
+	types "github.com/kitty314/1.17.0/constant/provider"
 )
 
 var (

@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/metacubex/mihomo/component/geodata"
-	"github.com/metacubex/mihomo/component/geodata/router"
+	"github.com/kitty314/1.17.0/component/geodata"
+	"github.com/kitty314/1.17.0/component/geodata/router"
 )
 
 type memConservativeLoader struct {

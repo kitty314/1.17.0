@@ -7,14 +7,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/metacubex/mihomo/adapter/outbound"
-	"github.com/metacubex/mihomo/common/atomic"
-	"github.com/metacubex/mihomo/common/utils"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/constant/provider"
-	types "github.com/metacubex/mihomo/constant/provider"
-	"github.com/metacubex/mihomo/log"
-	"github.com/metacubex/mihomo/tunnel"
+	"github.com/kitty314/1.17.0/adapter/outbound"
+	"github.com/kitty314/1.17.0/common/atomic"
+	"github.com/kitty314/1.17.0/common/utils"
+	C "github.com/kitty314/1.17.0/constant"
+	"github.com/kitty314/1.17.0/constant/provider"
+	types "github.com/kitty314/1.17.0/constant/provider"
+	"github.com/kitty314/1.17.0/log"
+	"github.com/kitty314/1.17.0/tunnel"
 
 	"github.com/dlclark/regexp2"
 )

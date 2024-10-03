@@ -7,7 +7,7 @@ import (
 	"net/netip"
 	"sync"
 
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.17.0/log"
 )
 
 var printMarkWarnOnce sync.Once

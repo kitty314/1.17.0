@@ -8,8 +8,8 @@ import (
 	"os"
 	"time"
 
-	mihomoHttp "github.com/metacubex/mihomo/component/http"
-	types "github.com/metacubex/mihomo/constant/provider"
+	clash.metaHttp "github.com/kitty314/1.17.0/component/http"
+	types "github.com/kitty314/1.17.0/constant/provider"
 )
 
 type FileVehicle struct {
@@ -52,7 +52,7 @@ func (h *HTTPVehicle) Path() string {
 func (h *HTTPVehicle) Read() ([]byte, error) {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*20)
 	defer cancel()
-	resp, err := mihomoHttp.HttpRequest(ctx, h.url, http.MethodGet, nil, nil)
+	resp, err := clash.metaHttp.HttpRequest(ctx, h.url, http.MethodGet, nil, nil)
 	if err != nil {
 		return nil, err
 	}

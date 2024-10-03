@@ -2,9 +2,9 @@ package provider
 
 import (
 	"fmt"
-	C "github.com/metacubex/mihomo/constant"
-	P "github.com/metacubex/mihomo/constant/provider"
-	"github.com/metacubex/mihomo/rules/common"
+	C "github.com/kitty314/1.17.0/constant"
+	P "github.com/kitty314/1.17.0/constant/provider"
+	"github.com/kitty314/1.17.0/rules/common"
 )
 
 type RuleSet struct {

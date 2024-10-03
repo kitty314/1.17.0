@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/metacubex/mihomo/component/geodata"
-	_ "github.com/metacubex/mihomo/component/geodata/standard"
-	C "github.com/metacubex/mihomo/constant"
+	"github.com/kitty314/1.17.0/component/geodata"
+	_ "github.com/kitty314/1.17.0/component/geodata/standard"
+	C "github.com/kitty314/1.17.0/constant"
 
 	"github.com/oschwald/maxminddb-golang"
 )

@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/metacubex/mihomo/adapter/inbound"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/transport/socks5"
+	"github.com/kitty314/1.17.0/adapter/inbound"
+	C "github.com/kitty314/1.17.0/constant"
+	"github.com/kitty314/1.17.0/transport/socks5"
 )
 
 func newClient(srcConn net.Conn, tunnel C.Tunnel, additions ...inbound.Addition) *http.Client {

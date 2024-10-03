@@ -4,12 +4,12 @@ import (
 	"net"
 	"strings"
 
-	"github.com/metacubex/mihomo/adapter/inbound"
-	N "github.com/metacubex/mihomo/common/net"
-	C "github.com/metacubex/mihomo/constant"
-	LC "github.com/metacubex/mihomo/listener/config"
-	"github.com/metacubex/mihomo/transport/shadowsocks/core"
-	"github.com/metacubex/mihomo/transport/socks5"
+	"github.com/kitty314/1.17.0/adapter/inbound"
+	N "github.com/kitty314/1.17.0/common/net"
+	C "github.com/kitty314/1.17.0/constant"
+	LC "github.com/kitty314/1.17.0/listener/config"
+	"github.com/kitty314/1.17.0/transport/shadowsocks/core"
+	"github.com/kitty314/1.17.0/transport/socks5"
 )
 
 type Listener struct {

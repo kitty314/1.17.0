@@ -6,8 +6,8 @@ import (
 	"strings"
 	_ "unsafe"
 
-	"github.com/metacubex/mihomo/common/utils"
-	"github.com/metacubex/mihomo/component/trie"
+	"github.com/kitty314/1.17.0/common/utils"
+	"github.com/kitty314/1.17.0/component/trie"
 	"github.com/zhangyunhao116/fastrand"
 )
 

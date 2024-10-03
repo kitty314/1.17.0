@@ -3,7 +3,7 @@ package common
 import (
 	"strings"
 
-	C "github.com/metacubex/mihomo/constant"
+	C "github.com/kitty314/1.17.0/constant"
 )
 
 type DomainSuffix struct {

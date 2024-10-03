@@ -5,7 +5,7 @@ import (
 	"net"
 	"runtime"
 
-	"github.com/metacubex/mihomo/component/dialer"
+	"github.com/kitty314/1.17.0/component/dialer"
 )
 
 func ListenDHCPClient(ctx context.Context, ifaceName string) (net.PacketConn, error) {

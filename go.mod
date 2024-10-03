@@ -1,4 +1,4 @@
-module github.com/metacubex/mihomo
+module github.com/kitty314/1.17.0
 
 go 1.20
 

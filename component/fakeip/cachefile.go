@@ -3,7 +3,7 @@ package fakeip
 import (
 	"net/netip"
 
-	"github.com/metacubex/mihomo/component/profile/cachefile"
+	"github.com/kitty314/1.17.0/component/profile/cachefile"
 )
 
 type cachefileStore struct {
