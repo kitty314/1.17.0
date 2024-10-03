@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func Testclash.meta_Hysteria(t *testing.T) {
+func Testclash_Hysteria(t *testing.T) {
 	cfg := &container.Config{
 		Image:        ImageHysteria,
 		ExposedPorts: defaultExposedPorts,

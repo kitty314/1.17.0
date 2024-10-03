@@ -3,7 +3,7 @@
   <br>Meta Kernel<br>
 </h1>
 
-<h3 align="center">Another clash.meta Kernel.</h3>
+<h3 align="center">Another clash Kernel.</h3>
 
 <p align="center">
   <a href="https://goreportcard.com/report/github.com/kitty314/1.17.0">
@@ -27,7 +27,7 @@
 - Remote groups allow users to implement powerful rules. Supports automatic fallback, load balancing or auto select node
   based off latency
 - Remote providers, allowing users to get node lists remotely instead of hard-coding in config
-- Netfilter TCP redirecting. Deploy clash.meta on your Internet gateway with `iptables`.
+- Netfilter TCP redirecting. Deploy clash on your Internet gateway with `iptables`.
 - Comprehensive HTTP RESTful API controller
 
 ## Dashboard
@@ -40,18 +40,18 @@ Configuration example is located at [/docs/config.yaml](https://github.com/kitty
 
 ## Docs
 
-Documentation can be found in [clash.meta Docs](https://wiki.metacubex.one/).
+Documentation can be found in [clash Docs](https://wiki.metacubex.one/).
 
 ## For development
 
 Requirements:
 [Go 1.20 or newer](https://go.dev/dl/)
 
-Build clash.meta:
+Build clash:
 
 ```shell
 git clone https://github.com/kitty314/1.17.0.git
-cd clash.meta && go mod download
+cd clash && go mod download
 go build
 ```
 
@@ -98,4 +98,4 @@ API.
 
 This software is released under the GPL-3.0 license.
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FMetaCubeX%2Fclash.meta.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FMetaCubeX%2Fclash.meta?ref=badge_large)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FMetaCubeX%2Fclash.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FMetaCubeX%2Fclash?ref=badge_large)

@@ -1,5 +1,5 @@
 {
-  description = "Another clash.meta Kernel";
+  description = "Another clash Kernel";
 
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/master";
 
@@ -15,7 +15,7 @@
           };
         in
         rec {
-          packages.default = pkgs.clash.meta-meta;
+          packages.default = pkgs.clash-meta;
         }
       ) //
     (
@@ -23,8 +23,8 @@
       {
         overlay = final: prev: {
 
-          clash.meta-meta = final.buildGo119Module {
-            pname = "clash.meta-meta";
+          clash-meta = final.buildGo119Module {
+            pname = "clash-meta";
             inherit version;
             src = ./.;
 
@@ -50,7 +50,7 @@
             doCheck = false;
 
             postInstall = ''
-              mv $out/bin/clash.meta $out/bin/clash.meta-meta
+              mv $out/bin/clash $out/bin/clash-meta
             '';
 
           };

@@ -8,7 +8,7 @@ import (
 	"os"
 	"time"
 
-	clash.metaHttp "github.com/kitty314/1.17.0/component/http"
+	clashHttp "github.com/kitty314/1.17.0/component/http"
 	types "github.com/kitty314/1.17.0/constant/provider"
 )
 
@@ -52,7 +52,7 @@ func (h *HTTPVehicle) Path() string {
 func (h *HTTPVehicle) Read() ([]byte, error) {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*20)
 	defer cancel()
-	resp, err := clash.metaHttp.HttpRequest(ctx, h.url, http.MethodGet, nil, nil)
+	resp, err := clashHttp.HttpRequest(ctx, h.url, http.MethodGet, nil, nil)
 	if err != nil {
 		return nil, err
 	}

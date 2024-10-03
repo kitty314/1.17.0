@@ -27,7 +27,7 @@ func WithSecret(secret string) Option {
 	}
 }
 
-// Parse call at the beginning of clash.meta
+// Parse call at the beginning of clash
 func Parse(options ...Option) error {
 	cfg, err := executor.Parse()
 	if err != nil {

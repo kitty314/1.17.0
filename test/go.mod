@@ -1,4 +1,4 @@
-module clash.meta-test
+module clash-test
 
 go 1.20
 

@@ -658,7 +658,7 @@ func benchmarkProxy(b *testing.B, proxy C.ProxyAdapter) {
 	})
 }
 
-func Testclash.meta_Basic(t *testing.T) {
+func Testclash_Basic(t *testing.T) {
 	basic := `
 mixed-port: 10000
 log-level: silent

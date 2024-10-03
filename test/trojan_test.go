@@ -12,7 +12,7 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-func Testclash.meta_Trojan(t *testing.T) {
+func Testclash_Trojan(t *testing.T) {
 	cfg := &container.Config{
 		Image:        ImageTrojan,
 		ExposedPorts: defaultExposedPorts,
@@ -48,7 +48,7 @@ func Testclash.meta_Trojan(t *testing.T) {
 	testSuit(t, proxy)
 }
 
-func Testclash.meta_TrojanGrpc(t *testing.T) {
+func Testclash_TrojanGrpc(t *testing.T) {
 	cfg := &container.Config{
 		Image:        ImageXray,
 		ExposedPorts: defaultExposedPorts,
@@ -87,7 +87,7 @@ func Testclash.meta_TrojanGrpc(t *testing.T) {
 	testSuit(t, proxy)
 }
 
-func Testclash.meta_TrojanWebsocket(t *testing.T) {
+func Testclash_TrojanWebsocket(t *testing.T) {
 	cfg := &container.Config{
 		Image:        ImageTrojanGo,
 		ExposedPorts: defaultExposedPorts,
@@ -123,7 +123,7 @@ func Testclash.meta_TrojanWebsocket(t *testing.T) {
 	testSuit(t, proxy)
 }
 
-func Testclash.meta_TrojanXTLS(t *testing.T) {
+func Testclash_TrojanXTLS(t *testing.T) {
 	cfg := &container.Config{
 		Image:        ImageXray,
 		ExposedPorts: defaultExposedPorts,

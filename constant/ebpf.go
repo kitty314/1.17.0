@@ -7,10 +7,10 @@ import (
 )
 
 const (
-	BpfFSPath = "/sys/fs/bpf/clash.meta"
+	BpfFSPath = "/sys/fs/bpf/clash"
 
 	TcpAutoRedirPort  = 't'<<8 | 'r'<<0
-	clash.metaTrafficMark = 'c'<<24 | 'l'<<16 | 't'<<8 | 'm'<<0
+	clashTrafficMark = 'c'<<24 | 'l'<<16 | 't'<<8 | 'm'<<0
 )
 
 type EBpf interface {

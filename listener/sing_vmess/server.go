@@ -14,7 +14,7 @@ import (
 	LC "github.com/kitty314/1.17.0/listener/config"
 	"github.com/kitty314/1.17.0/listener/sing"
 	"github.com/kitty314/1.17.0/ntp"
-	clash.metaVMess "github.com/kitty314/1.17.0/transport/vmess"
+	clashVMess "github.com/kitty314/1.17.0/transport/vmess"
 
 	vmess "github.com/metacubex/sing-vmess"
 	"github.com/sagernet/sing/common"
@@ -85,7 +85,7 @@ func New(config LC.VmessServer, tunnel C.Tunnel, additions ...inbound.Addition) 
 	if config.WsPath != "" {
 		httpMux = http.NewServeMux()
 		httpMux.HandleFunc(config.WsPath, func(w http.ResponseWriter, r *http.Request) {
-			conn, err := clash.metaVMess.StreamUpgradedWebsocketConn(w, r)
+			conn, err := clashVMess.StreamUpgradedWebsocketConn(w, r)
 			if err != nil {
 				http.Error(w, err.Error(), 500)
 				return

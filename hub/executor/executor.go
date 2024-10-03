@@ -491,5 +491,5 @@ func Shutdown() {
 	tproxy.CleanupTProxyIPTables()
 	resolver.StoreFakePoolState()
 
-	log.Warnln("clash.meta shutting down")
+	log.Warnln("clash shutting down")
 }

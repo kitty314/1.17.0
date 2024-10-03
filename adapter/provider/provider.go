@@ -13,7 +13,7 @@ import (
 	"github.com/kitty314/1.17.0/adapter"
 	"github.com/kitty314/1.17.0/common/convert"
 	"github.com/kitty314/1.17.0/common/utils"
-	clash.metaHttp "github.com/kitty314/1.17.0/component/http"
+	clashHttp "github.com/kitty314/1.17.0/component/http"
 	"github.com/kitty314/1.17.0/component/resource"
 	C "github.com/kitty314/1.17.0/constant"
 	types "github.com/kitty314/1.17.0/constant/provider"
@@ -127,7 +127,7 @@ func (pp *proxySetProvider) getSubscriptionInfo() {
 	go func() {
 		ctx, cancel := context.WithTimeout(context.Background(), time.Second*90)
 		defer cancel()
-		resp, err := clash.metaHttp.HttpRequest(ctx, pp.Vehicle().(*resource.HTTPVehicle).Url(),
+		resp, err := clashHttp.HttpRequest(ctx, pp.Vehicle().(*resource.HTTPVehicle).Url(),
 			http.MethodGet, http.Header{"User-Agent": {C.UA}}, nil)
 		if err != nil {
 			return
@@ -136,7 +136,7 @@ func (pp *proxySetProvider) getSubscriptionInfo() {
 
 		userInfoStr := strings.TrimSpace(resp.Header.Get("subscription-userinfo"))
 		if userInfoStr == "" {
-			resp2, err := clash.metaHttp.HttpRequest(ctx, pp.Vehicle().(*resource.HTTPVehicle).Url(),
+			resp2, err := clashHttp.HttpRequest(ctx, pp.Vehicle().(*resource.HTTPVehicle).Url(),
 				http.MethodGet, http.Header{"User-Agent": {"Quantumultx"}}, nil)
 			if err != nil {
 				return

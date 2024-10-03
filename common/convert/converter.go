@@ -12,7 +12,7 @@ import (
 	"github.com/kitty314/1.17.0/log"
 )
 
-// ConvertsV2Ray convert V2Ray subscribe proxies data to clash.meta proxies config
+// ConvertsV2Ray convert V2Ray subscribe proxies data to clash proxies config
 func ConvertsV2Ray(buf []byte) ([]map[string]any, error) {
 	data := DecodeBase64(buf)
 

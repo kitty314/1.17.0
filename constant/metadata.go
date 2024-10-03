@@ -164,7 +164,7 @@ func (m *Metadata) SourceAddress() string {
 
 func (m *Metadata) SourceDetail() string {
 	if m.Type == INNER {
-		return fmt.Sprintf("%s", clash.metaName)
+		return fmt.Sprintf("%s", clashName)
 	}
 
 	switch {

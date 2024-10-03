@@ -15,7 +15,7 @@ import (
 	"sync"
 	"time"
 
-	clash.metaHttp "github.com/kitty314/1.17.0/component/http"
+	clashHttp "github.com/kitty314/1.17.0/component/http"
 	"github.com/kitty314/1.17.0/constant"
 	C "github.com/kitty314/1.17.0/constant"
 	"github.com/kitty314/1.17.0/log"
@@ -24,7 +24,7 @@ import (
 )
 
 // modify from https://github.com/AdguardTeam/AdGuardHome/blob/595484e0b3fb4c457f9bb727a6b94faa78a66c5f/internal/updater/updater.go
-// Updater is the clash.meta updater.
+// Updater is the clash updater.
 var (
 	goarm           string
 	gomips          string
@@ -42,7 +42,7 @@ var (
 	backupExeName  string // 备份文件名
 	updateExeName  string // 更新后的可执行文件
 
-	baseURL       string = "https://github.com/kitty314/1.17.0/releases/download/Prerelease-Alpha/clash.meta"
+	baseURL       string = "https://github.com/kitty314/1.17.0/releases/download/Prerelease-Alpha/clash"
 	versionURL    string = "https://github.com/kitty314/1.17.0/releases/download/Prerelease-Alpha/version.txt"
 	packageURL    string
 	latestVersion string
@@ -136,9 +136,9 @@ func prepare(exePath string) (err error) {
 	backupDir = filepath.Join(workDir, "meta-backup")
 
 	if runtime.GOOS == "windows" {
-		updateExeName = "clash.meta" + "-" + runtime.GOOS + "-" + runtime.GOARCH + amd64Compatible + ".exe"
+		updateExeName = "clash" + "-" + runtime.GOOS + "-" + runtime.GOARCH + amd64Compatible + ".exe"
 	} else {
-		updateExeName = "clash.meta" + "-" + runtime.GOOS + "-" + runtime.GOARCH + amd64Compatible
+		updateExeName = "clash" + "-" + runtime.GOOS + "-" + runtime.GOARCH + amd64Compatible
 	}
 
 	log.Infoln("updateExeName: %s ", updateExeName)
@@ -232,7 +232,7 @@ const MaxPackageFileSize = 32 * 1024 * 1024
 func downloadPackageFile() (err error) {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*90)
 	defer cancel()
-	resp, err := clash.metaHttp.HttpRequest(ctx, packageURL, http.MethodGet, http.Header{"User-Agent": {C.UA}}, nil)
+	resp, err := clashHttp.HttpRequest(ctx, packageURL, http.MethodGet, http.Header{"User-Agent": {C.UA}}, nil)
 	if err != nil {
 		return fmt.Errorf("http request failed: %w", err)
 	}
@@ -413,7 +413,7 @@ func copyFile(src, dst string) error {
 func getLatestVersion() (version string, err error) {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*5)
 	defer cancel()
-	resp, err := clash.metaHttp.HttpRequest(ctx, versionURL, http.MethodGet, http.Header{"User-Agent": {C.UA}}, nil)
+	resp, err := clashHttp.HttpRequest(ctx, versionURL, http.MethodGet, http.Header{"User-Agent": {C.UA}}, nil)
 	if err != nil {
 		return "", fmt.Errorf("get Latest Version fail: %w", err)
 	}

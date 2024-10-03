@@ -115,7 +115,7 @@ func (e *EBpfTC) Start() error {
 	filter := &netlink.BpfFilter{
 		FilterAttrs:  filterAttrs,
 		Fd:           objs.bpfPrograms.TcTunFunc.FD(),
-		Name:         "clash.meta-tc-" + e.ifName,
+		Name:         "clash-tc-" + e.ifName,
 		DirectAction: true,
 	}
 

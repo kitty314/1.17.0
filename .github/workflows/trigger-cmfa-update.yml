@@ -15,7 +15,7 @@ on:
       - Alpha
       
 jobs:
-  # Send "core-updated" to MetaCubeX/clash.metaForAndroid to trigger update-dependencies
+  # Send "core-updated" to MetaCubeX/clashForAndroid to trigger update-dependencies
   trigger-CMFA-update:
     runs-on: ubuntu-latest
     steps:

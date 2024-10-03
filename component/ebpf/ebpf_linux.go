@@ -47,7 +47,7 @@ func NewTcEBpfProgram(ifaceNames []string, tunName string) (*TcEBpfProgram, erro
 
 	tunIndex := uint32(tunIface.Attrs().Index)
 
-	dialer.DefaultRoutingMark.Store(C.clash.metaTrafficMark)
+	dialer.DefaultRoutingMark.Store(C.clashTrafficMark)
 
 	ifMark := uint32(dialer.DefaultRoutingMark.Load())
 

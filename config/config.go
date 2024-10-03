@@ -165,7 +165,7 @@ type Experimental struct {
 	QUICGoDisableECN bool     `yaml:"quic-go-disable-ecn"`
 }
 
-// Config is clash.meta config manager
+// Config is clash config manager
 type Config struct {
 	General       *General
 	IPTables      *IPTables
@@ -392,7 +392,7 @@ func UnmarshalRawConfig(buf []byte) (*RawConfig, error) {
 		ProxyGroup:      []map[string]any{},
 		TCPConcurrent:   false,
 		FindProcessMode: P.FindProcessStrict,
-		GlobalUA:        "clash.meta",
+		GlobalUA:        "clash",
 		Tun: RawTun{
 			Enable:              false,
 			Device:              "",

@@ -38,7 +38,7 @@ func init() {
 	flag.StringVar(&externalController, "ext-ctl", os.Getenv("CLASH_OVERRIDE_EXTERNAL_CONTROLLER"), "override external controller address")
 	flag.StringVar(&secret, "secret", os.Getenv("CLASH_OVERRIDE_SECRET"), "override secret for RESTful API")
 	flag.BoolVar(&geodataMode, "m", false, "set geodata mode")
-	flag.BoolVar(&version, "v", false, "show current version of clash.meta")
+	flag.BoolVar(&version, "v", false, "show current version of clash")
 	flag.BoolVar(&testConfig, "t", false, "test configuration and exit")
 	flag.Parse()
 }
@@ -46,7 +46,7 @@ func init() {
 func main() {
 	_, _ = maxprocs.Set(maxprocs.Logger(func(string, ...any) {}))
 	if version {
-		fmt.Printf("clash.meta Meta %s %s %s with %s %s\n",
+		fmt.Printf("clash Meta %s %s %s with %s %s\n",
 			C.Version, runtime.GOOS, runtime.GOARCH, runtime.Version(), C.BuildTime)
 		if tags := features.Tags(); len(tags) != 0 {
 			fmt.Printf("Use tags: %s\n", strings.Join(tags, ", "))

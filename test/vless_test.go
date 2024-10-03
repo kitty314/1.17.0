@@ -12,7 +12,7 @@ import (
 )
 
 // TODO: fix udp test
-func Testclash.meta_VlessTLS(t *testing.T) {
+func Testclash_VlessTLS(t *testing.T) {
 	cfg := &container.Config{
 		Image:        ImageVmess,
 		ExposedPorts: defaultExposedPorts,
@@ -51,7 +51,7 @@ func Testclash.meta_VlessTLS(t *testing.T) {
 }
 
 // TODO: fix udp test
-func Testclash.meta_VlessXTLS(t *testing.T) {
+func Testclash_VlessXTLS(t *testing.T) {
 	cfg := &container.Config{
 		Image:        ImageXray,
 		ExposedPorts: defaultExposedPorts,
@@ -91,7 +91,7 @@ func Testclash.meta_VlessXTLS(t *testing.T) {
 }
 
 // TODO: fix udp test
-func Testclash.meta_VlessWS(t *testing.T) {
+func Testclash_VlessWS(t *testing.T) {
 	cfg := &container.Config{
 		Image:        ImageVmess,
 		ExposedPorts: defaultExposedPorts,

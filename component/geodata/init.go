@@ -8,7 +8,7 @@ import (
 	"os"
 	"time"
 
-	clash.metaHttp "github.com/kitty314/1.17.0/component/http"
+	clashHttp "github.com/kitty314/1.17.0/component/http"
 	"github.com/kitty314/1.17.0/component/mmdb"
 	C "github.com/kitty314/1.17.0/constant"
 	"github.com/kitty314/1.17.0/log"
@@ -44,7 +44,7 @@ func InitGeoSite() error {
 func downloadGeoSite(path string) (err error) {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*90)
 	defer cancel()
-	resp, err := clash.metaHttp.HttpRequest(ctx, C.GeoSiteUrl, http.MethodGet, http.Header{"User-Agent": {C.UA}}, nil)
+	resp, err := clashHttp.HttpRequest(ctx, C.GeoSiteUrl, http.MethodGet, http.Header{"User-Agent": {C.UA}}, nil)
 	if err != nil {
 		return
 	}
@@ -63,7 +63,7 @@ func downloadGeoSite(path string) (err error) {
 func downloadGeoIP(path string) (err error) {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*90)
 	defer cancel()
-	resp, err := clash.metaHttp.HttpRequest(ctx, C.GeoIpUrl, http.MethodGet, http.Header{"User-Agent": {C.UA}}, nil)
+	resp, err := clashHttp.HttpRequest(ctx, C.GeoIpUrl, http.MethodGet, http.Header{"User-Agent": {C.UA}}, nil)
 	if err != nil {
 		return
 	}

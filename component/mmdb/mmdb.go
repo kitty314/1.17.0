@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	clash.metaHttp "github.com/kitty314/1.17.0/component/http"
+	clashHttp "github.com/kitty314/1.17.0/component/http"
 	C "github.com/kitty314/1.17.0/constant"
 	"github.com/kitty314/1.17.0/log"
 
@@ -79,7 +79,7 @@ func Instance() Reader {
 func DownloadMMDB(path string) (err error) {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*90)
 	defer cancel()
-	resp, err := clash.metaHttp.HttpRequest(ctx, C.MmdbUrl, http.MethodGet, http.Header{"User-Agent": {C.UA}}, nil)
+	resp, err := clashHttp.HttpRequest(ctx, C.MmdbUrl, http.MethodGet, http.Header{"User-Agent": {C.UA}}, nil)
 	if err != nil {
 		return
 	}

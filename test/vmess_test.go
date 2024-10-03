@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-func Testclash.meta_Vmess(t *testing.T) {
+func Testclash_Vmess(t *testing.T) {
 	configPath := C.Path.Resolve("vmess.json")
 
 	cfg := &container.Config{
@@ -44,7 +44,7 @@ func Testclash.meta_Vmess(t *testing.T) {
 	testSuit(t, proxy)
 }
 
-func Testclash.meta_VmessAuthenticatedLength(t *testing.T) {
+func Testclash_VmessAuthenticatedLength(t *testing.T) {
 	configPath := C.Path.Resolve("vmess.json")
 
 	cfg := &container.Config{
@@ -78,7 +78,7 @@ func Testclash.meta_VmessAuthenticatedLength(t *testing.T) {
 	testSuit(t, proxy)
 }
 
-func Testclash.meta_VmessPacketAddr(t *testing.T) {
+func Testclash_VmessPacketAddr(t *testing.T) {
 	configPath := C.Path.Resolve("vmess.json")
 
 	cfg := &container.Config{
@@ -112,7 +112,7 @@ func Testclash.meta_VmessPacketAddr(t *testing.T) {
 	testSuit(t, proxy)
 }
 
-func Testclash.meta_VmessTLS(t *testing.T) {
+func Testclash_VmessTLS(t *testing.T) {
 	cfg := &container.Config{
 		Image:        ImageVmess,
 		ExposedPorts: defaultExposedPorts,
@@ -149,7 +149,7 @@ func Testclash.meta_VmessTLS(t *testing.T) {
 	testSuit(t, proxy)
 }
 
-func Testclash.meta_VmessHTTP2(t *testing.T) {
+func Testclash_VmessHTTP2(t *testing.T) {
 	cfg := &container.Config{
 		Image:        ImageVmess,
 		ExposedPorts: defaultExposedPorts,
@@ -191,7 +191,7 @@ func Testclash.meta_VmessHTTP2(t *testing.T) {
 	testSuit(t, proxy)
 }
 
-func Testclash.meta_VmessHTTP(t *testing.T) {
+func Testclash_VmessHTTP(t *testing.T) {
 	cfg := &container.Config{
 		Image:        ImageVmess,
 		ExposedPorts: defaultExposedPorts,
@@ -241,7 +241,7 @@ func Testclash.meta_VmessHTTP(t *testing.T) {
 	testSuit(t, proxy)
 }
 
-func Testclash.meta_VmessWebsocket(t *testing.T) {
+func Testclash_VmessWebsocket(t *testing.T) {
 	cfg := &container.Config{
 		Image:        ImageVmess,
 		ExposedPorts: defaultExposedPorts,
@@ -274,7 +274,7 @@ func Testclash.meta_VmessWebsocket(t *testing.T) {
 	testSuit(t, proxy)
 }
 
-func Testclash.meta_VmessWebsocketTLS(t *testing.T) {
+func Testclash_VmessWebsocketTLS(t *testing.T) {
 	cfg := &container.Config{
 		Image:        ImageVmess,
 		ExposedPorts: defaultExposedPorts,
@@ -311,7 +311,7 @@ func Testclash.meta_VmessWebsocketTLS(t *testing.T) {
 	testSuit(t, proxy)
 }
 
-func Testclash.meta_VmessGrpc(t *testing.T) {
+func Testclash_VmessGrpc(t *testing.T) {
 	cfg := &container.Config{
 		Image:        ImageVmess,
 		ExposedPorts: defaultExposedPorts,
@@ -352,7 +352,7 @@ func Testclash.meta_VmessGrpc(t *testing.T) {
 	testSuit(t, proxy)
 }
 
-func Testclash.meta_VmessWebsocket0RTT(t *testing.T) {
+func Testclash_VmessWebsocket0RTT(t *testing.T) {
 	cfg := &container.Config{
 		Image:        ImageVmess,
 		ExposedPorts: defaultExposedPorts,
@@ -390,7 +390,7 @@ func Testclash.meta_VmessWebsocket0RTT(t *testing.T) {
 	testSuit(t, proxy)
 }
 
-func Testclash.meta_VmessWebsocketXray0RTT(t *testing.T) {
+func Testclash_VmessWebsocketXray0RTT(t *testing.T) {
 	cfg := &container.Config{
 		Image:        ImageXray,
 		ExposedPorts: defaultExposedPorts,
